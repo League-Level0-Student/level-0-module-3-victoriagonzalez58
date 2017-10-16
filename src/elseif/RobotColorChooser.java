@@ -14,9 +14,9 @@ public class RobotColorChooser {
 	public static void main(String[] args) {
 
 Robot jim = new Robot();
-jim.setPenWidth(10000);
+jim.setPenWidth(10);
 jim.penDown();
-for (int i = 0; i < 10; i++) {
+for (int i = 0; i < 1000; i++) {
 String color = JOptionPane.showInputDialog(null, "what color would you like the robot to draw in?");
 jim.setRandomPenColor();
 if(color.equalsIgnoreCase("blue")){
