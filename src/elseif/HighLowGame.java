@@ -5,12 +5,31 @@ package elseif;
 
 import java.util.Random;
 
+import javax.swing.JOptionPane;
+
 public class HighLowGame {
 
 	public static void main(String[] args) {
 		// 3. Change this line to give you a random number between 1 - 100. 
-		int random = new Random().nextInt(5);
+		int random = new Random().nextInt(100);		
+
+
+		for (int i = 0; i <= 10; i++) {
+			String ans = JOptionPane.showInputDialog(null, "guess a number");
+			int anz = (Integer.parseInt(ans));
+
+		
 		// 2. Print out the random variable above
+		if(anz==random){JOptionPane.showMessageDialog(null, "win");}else
+		if (anz<=random) {
+			JOptionPane.showMessageDialog(null, "too low");
+		} else if(anz>=random) {
+			JOptionPane.showMessageDialog(null, "too high");
+		}
+		else{		JOptionPane.showMessageDialog(null, "lose");
+
+		}}
+		
 		
 		// 11. do the following 10 times
 		
@@ -26,8 +45,8 @@ public class HighLowGame {
 				// 10. tell them it's too low
 
 		// 12. tell them they lose
-	}
+	}}
 
-}
+
 
 
